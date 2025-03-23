@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepest Sword - A Tiny Game About A Big Sword | WebGameSpot</title>
+    <meta name="description" content="Play Deepest Sword online - A tiny game about a hero with a ridiculously long sword. Made in 48 hours for GMTK Game Jam 2021. Free to play on WebGameSpot.">
+    <link rel="canonical" href="https://webgamespot.online/deepest-sword">
+    <meta property="og:title" content="Deepest Sword - A Tiny Game About A Big Sword | WebGameSpot">
+    <meta property="og:description" content="Play Deepest Sword online - A tiny game about a hero with a ridiculously long sword. Made in 48 hours for GMTK Game Jam 2021.">
+    <meta property="og:url" content="https://webgamespot.online/deepest-sword">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        appleBlue: '#0071e3',
+                        appleLightGray: '#f5f5f7',
+                        appleDarkGray: '#1d1d1f',
+                        appleRed: '#fa243c',
+                        appleGreen: '#32d74b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 640px) {
+            .game-container {
+                padding-top: 75%; /* Adjusted for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-appleLightGray text-appleDarkGray">
+    <header class="bg-appleDarkGray text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <a href="https://webgamespot.online" class="text-xl font-bold">WebGameSpot</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <!-- Navigation links removed as requested -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6 py-8">
+        <section class="mb-12">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">Deepest Sword</h1>
+            <p class="text-lg md:text-xl text-center mb-8 max-w-3xl mx-auto">
+                A tiny game about a hero with a ridiculously long sword
+            </p>
+            
+            <div class="game-container rounded-xl shadow-lg overflow-hidden border-2 border-appleBlue mb-8">
+                <iframe class="responsive-iframe" src="https://html-classic.itch.zone/html/4017918/index.html?v=1732313762" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold mb-4 text-appleBlue">Game Description</h2>
+            <p class="mb-4">
+                Deepest Sword is a tiny game about a hero with a ridiculously long sword made in 48 hours for the GMTK Game Jam 2021. The game was created by the team Cosmic Adventure Squad.
+            </p>
+            <p class="mb-4">
+                This game jam entry is based on the theme "Joined Together" and explores this concept through the connection between the hero and their impractical weapon.
+            </p>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-appleBlue">Controls</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Move - A and D</li>
+                    <li>Sword - Mouse buttons or left and right arrows</li>
+                    <li>Respawn - R</li>
+                    <li>Full reset - 0 (zero)</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-appleBlue">Credits</h2>
+                <p class="mb-3">Developed by Cosmic Adventure Squad (<a href="https://twitter.com/squad_cosmic" class="text-appleBlue hover:underline">@squad_cosmic</a>)</p>
+                <p class="mb-4">Support the developers on <a href="https://ko-fi.com/cosmicadventuresquad" class="text-appleBlue hover:underline">Ko-Fi</a></p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Vu Ha (<a href="https://twitter.com/stregawolf" class="text-appleBlue hover:underline">@stregawolf</a>) - Code & Sounds</li>
+                    <li>Rose Peng (<a href="https://twitter.com/ouroborose" class="text-appleBlue hover:underline">@ouroborose</a>) - Art</li>
+                    <li>Johan Soriao (<a href="https://twitter.com/tenlki" class="text-appleBlue hover:underline">@tenlki</a>) - Music</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold mb-4 text-appleBlue">Speedrun Challenge</h2>
+            <p class="mb-4">
+                If you're speedrunning, submit a time on <a href="https://speedrun.com" class="text-appleBlue hover:underline">Speedrun</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-appleDarkGray text-white py-8">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-xl font-bold mb-4">About WebGameSpot</h2>
+                    <p>Your premier destination for free web games. We curate the best web games for your entertainment.</p>
+                </div>
+                <!-- Quick Links section removed as requested -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Connect With Us</h2>
+                    <p class="mb-2">Stay updated with the latest games and features.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-appleBlue transition-colors">Twitter</a>
+                        <a href="#" class="hover:text-appleBlue transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-appleBlue transition-colors">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-600 text-center">
+                <p>&copy; 2025 WebGameSpot.online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
